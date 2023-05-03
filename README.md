@@ -1,2 +1,2 @@
 # doctrine-generic
- Some general purpose extensions to Doctrine ORM
+ A couple general purpose extensions for Doctrine DBAL and ORM: `SimplifiedArrayHydrator` and `NullableArrayType`.

@@ -1,0 +1,29 @@
+{
+	"name": "willherzog/doctrine-generic",
+	"description": "A couple general purpose extensions for Doctrine DBAL and ORM.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Will Herzog",
+            "email": "willherzog@gmail.com",
+            "role": "Developer"
+        }
+    ],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/willherzog/php-util"
+		}
+	],
+    "require": {
+		"php": "^8.2",
+        "doctrine/orm": "^2.14",
+		"willherzog/php-util": "dev-main"
+	},
+    "autoload": {
+        "psr-4": {
+            "WHDoctrine\\": "src/"
+        }
+    }
+}
