@@ -17,7 +17,7 @@
 		}
 	],
     "require": {
-		"php": "^8.2",
+		"php": "^8.1",
         "doctrine/orm": "^2.14",
 		"willherzog/php-util": "dev-main"
 	},
