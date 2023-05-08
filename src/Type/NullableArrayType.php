@@ -16,7 +16,7 @@ class NullableArrayType extends Type
 	/**
 	 * {@inheritdoc}
 	 */
-	public function getName()
+	public function getName(): string
 	{
 		return 'array';
 	}
@@ -36,7 +36,7 @@ class NullableArrayType extends Type
 	/**
 	 * {@inheritdoc}
 	 */
-	public function convertToPHPValue($value, AbstractPlatform $platform)
+	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
 		if ($value === null) {
 			return null;
@@ -50,7 +50,7 @@ class NullableArrayType extends Type
 	/**
 	 * {@inheritdoc}
 	 */
-	public function getSQLDeclaration(array $column, AbstractPlatform $platform)
+	public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
 	{
 		return $platform->getClobTypeDeclarationSQL($column);
 	}
