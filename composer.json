@@ -1,6 +1,6 @@
 {
 	"name": "willherzog/doctrine-generic",
-	"description": "A couple general purpose extensions for Doctrine DBAL and ORM.",
+	"description": "Some purpose extensions for Doctrine DBAL and ORM.",
     "type": "library",
     "license": "MIT",
     "authors": [
