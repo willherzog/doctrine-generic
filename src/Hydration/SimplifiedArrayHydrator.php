@@ -12,7 +12,7 @@ use WHPHP\Util\ArrayUtil;
  *  * In all other cases the results are unmodified from those produced by the normal Doctrine ArrayHydrator.
  * Inspired by (but very different from) Gabriel Ostrolucký's ColumnHydrator class <https://gist.github.com/ostrolucky/f9f1e0b271357573fde55b7a2ba91a32>
  *
- * @uses ArrayUtil::hasKeys()
+ * @uses ArrayUtil::removeValue()
  *
  * @author Will Herzog <willherzog@gmail.com>
  */

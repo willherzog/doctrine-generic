@@ -4,5 +4,7 @@
  * Custom Type: `NullableArrayType`
 ## Doctrine ORM
  * Custom Hydrator: `SimplifiedArrayHydrator`
- * Entity Interfaces: `WeightedItem` and `ConditionallyDeleteable`
+ * Entity Interfaces: `SluggableItem`, `TimestampedItem`, `WeightedItem`
  * Entity Interface/Trait: `KeyValueInterface`/`KeyValueTrait`
+ * Entity Interface/Trait: `ItemFlagsInterface`/`ItemFlagsTrait`
+ * Entity Interface: `ConditionallyDeleteable`

@@ -3,6 +3,8 @@
 namespace WHDoctrine\Entity;
 
 /**
+ * Interface for items which should not always be deleteable (based on some internal condition(s)).
+ *
  * @author Will Herzog <willherzog@gmail.com>
  */
 interface ConditionallyDeleteable
