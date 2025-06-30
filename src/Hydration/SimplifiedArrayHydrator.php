@@ -30,9 +30,10 @@ class SimplifiedArrayHydrator extends ArrayHydrator
 		}
 
 		$resultColumns = array_keys(reset($result));
+		$resultSetMapping = $this->resultSetMapping();
 
-		if( isset($this->_rsm->indexByMap['scalars']) ) {
-			$indexColumn = $this->_rsm->scalarMappings[$this->_rsm->indexByMap['scalars']];
+		if( isset($resultSetMapping->indexByMap['scalars']) ) {
+			$indexColumn = $resultSetMapping->scalarMappings[$resultSetMapping->indexByMap['scalars']];
 
 			ArrayUtil::removeValue($resultColumns, $indexColumn);
 		}
