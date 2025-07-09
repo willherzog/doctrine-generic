@@ -18,6 +18,7 @@ use WHPHP\Util\ArrayUtil;
  */
 class SimplifiedArrayHydrator extends ArrayHydrator
 {
+	public const MODE_NAME = 'simplified_array';
 	/**
 	 * @inheritdoc
 	 */
