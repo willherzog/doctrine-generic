@@ -7,9 +7,9 @@ use Doctrine\ORM\Mapping as ORM;
 use WHPHP\Util\ArrayUtil;
 
 /**
- * A default implementation of ItemFlagsInterface.
+ * A default implementation of {@link ItemFlagsInterface}.
  *
- * Assumes that custom DBAL type WHDoctrine\Type\NullableArrayType has been configured as "array_nullable".
+ * Assumes that custom DBAL type {@link WHDoctrine\Type\NullableArrayType} has been configured as "array_nullable".
  * If that is not the case, the $flags property below should be overridden to use a different DBAL type.
  *
  * @uses ArrayUtil::removeValue()

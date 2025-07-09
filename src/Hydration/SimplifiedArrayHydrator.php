@@ -9,8 +9,9 @@ use WHPHP\Util\ArrayUtil;
 /**
  * Hydrator which produces an associated, single-dimensional array IF selecting only two columns, one of which is a scalar specified for use as the index.
  *  * Produces an indexed, single-dimensional array if selecting only one column which has not been specified for index use.
- *  * In all other cases the results are unmodified from those produced by the normal Doctrine ArrayHydrator.
- * Inspired by (but very different from) Gabriel Ostrolucký's ColumnHydrator class <https://gist.github.com/ostrolucky/f9f1e0b271357573fde55b7a2ba91a32>
+ *  * In all other cases the results are unmodified from those produced by the original {@link ArrayHydrator}.
+ *
+ * Inspired by (but very different from) Gabriel Ostrolucký's ColumnHydrator class <https://gist.github.com/ostrolucky/f9f1e0b271357573fde55b7a2ba91a32>.
  *
  * @uses ArrayUtil::removeValue()
  *

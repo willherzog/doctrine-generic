@@ -5,7 +5,7 @@ namespace WHDoctrine\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * A default implementation of KeyValueInterface.
+ * A default implementation of {@link KeyValueInterface}.
  *
  * @author Will Herzog <willherzog@gmail.com>
  */
