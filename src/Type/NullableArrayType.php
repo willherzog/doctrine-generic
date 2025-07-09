@@ -31,7 +31,7 @@ class NullableArrayType extends Type
 
 	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
-		if ($value === null) {
+		if( $value === null ) {
 			return null;
 		}
 
