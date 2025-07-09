@@ -31,9 +31,6 @@ trait ItemFlagsTrait
 		return $this->flags !== null && in_array($flag, $this->flags, true);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function addFlag(string $flag): bool
 	{
 		if( $this->flags === null ) {
@@ -47,9 +44,6 @@ trait ItemFlagsTrait
 		return true;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function removeFlag(string $flag): bool
 	{
 		if( $this->flags === null ) {

@@ -15,17 +15,11 @@ use Doctrine\DBAL\Types\Type;
  */
 class NullableArrayType extends Type
 {
-	/**
-	 * {@inheritdoc}
-	 */
 	public function getName(): string
 	{
 		return 'array';
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function convertToDatabaseValue($value, AbstractPlatform $platform): mixed
 	{
 		if( $value === null ) {
@@ -35,9 +29,6 @@ class NullableArrayType extends Type
 		return serialize($value);
 	}
 
-	/**
-	 * {@inheritdoc}
-	 */
 	public function convertToPHPValue($value, AbstractPlatform $platform): mixed
 	{
 		if ($value === null) {
@@ -49,9 +40,6 @@ class NullableArrayType extends Type
 		return unserialize($value);
 	}
 
-	/**
-	 * {@inheritdoc}
-	 */
 	public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
 	{
 		return $platform->getClobTypeDeclarationSQL($column);
